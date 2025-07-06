@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+       
+}
+
+
+
+
+.main-container{
+    display: grid;
+    grid-template-areas: 
+    "navbar navbar"
+    "filtros main"
+    "footer footer"
+    ;
+    height: 100vh;
+    grid-template-rows: 1fr 5fr 4fr;
+    grid-template-columns: 1fr 6fr;
+    background-color: #D4DCFF;
+    gap: auto;
+}
+
+.navbar{
+    grid-area: navbar;
+    display: flex;
+    border: 1px solid #D4DCFF;
+    min-height: 40px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background-color:rgb(46, 46, 77);
+   
+    color:aquamarine;
+
+}
+
+.filtros{
+    grid-area: filtros;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+
+
+}
+
+.main-content{
+    grid-area: main;
+    margin-top: 20px;
+}
+
+.pie-pagina{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 15px;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 15px;
+}
+
+.grid-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: solid 1px black;
+}
+
+
+.card {
+    display: flex; 
+    flex-direction: column; 
+    border-radius: 16px  16px 16px 16px;
+    width: 272px;
+    
+    box-shadow: 2px 7px 13px 0px rgba(0,0,0,0.2);
+    overflow: hidden; 
+    
+    border-color: #000000;
+}
+.card-body{
+    background-color: #fffcfc;
+    flex-grow: 1;
+    padding: 24px; 
+}
+
+.card-title{
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 0px; 
+    padding: 0px; 
+     
+}
+.card-text{
+    line-height: 1;
+    margin: 10px 0px 0px 0px; 
+    font-size: 17px;
+    color: #000000;
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+    
+}
+
+.font-size-style{
+    font-size: 15px;
+}
+
+.comprar{
+    display: flex;
+    background-color:rgb(46, 46, 77);
+    justify-content: center;
+    color:aquamarine;
+
+
+}
